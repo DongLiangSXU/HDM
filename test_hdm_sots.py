@@ -19,7 +19,7 @@ print('log_dir :',log_dir)
 print('model_name:',model_name)
 
 models_={
-    'ffa':DR_Net_phy(3,3)
+    'hdm':DR_Net_phy(3,3)
 }
 
 start_time=time.time()
@@ -140,7 +140,7 @@ def test(net,loader_test):
 
 if __name__ == "__main__":
 
-    net=models_[opt.net]
+    net=models_['hdm']
     net=net.to(opt.device)
 
     if opt.device=='cuda':
